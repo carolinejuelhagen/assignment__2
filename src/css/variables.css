@@ -1,0 +1,30 @@
+:root {
+/* Colors */
+--color1: #600c2b;
+--color2: #0f1842;
+--text-color: #8b6c18;
+--background-color: #fff;
+--background-color2: #F5C353;
+--boarder-color: #553f03;
+
+/* Image background colors */
+--img-background-color1: #1D3695;
+--img-background-color-gradient1: #0B122B;
+--img-background-color2: #A7124A;
+--img-background-color-gradient2: #180F23;
+
+/* Shadows */
+--box-shadow: 0 4px 12px #00000026; 
+
+/* Spacing */
+--spacing-xxsmall: 0.25rem;
+--spacing-xsmall: 0.5rem;
+--spacing-small: 0.75rem;
+--spacing-medium: 1rem;
+--spacing-large: 1.5rem;
+--spacing-xlarge: 2rem;
+--spacing-xxlarge: 3rem;
+
+/* Font size */
+--font-size-base: 16px;
+}

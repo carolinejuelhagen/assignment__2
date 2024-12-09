@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color2);
+    color: var(--text-color);
+    line-height: 1.5;
+    min-height: 100vh;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* HEADING */
+header {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(180deg, var(--img-background-color-gradient2), var(--img-background-color2));
+}
+
+.page__header {
+    display: flex;
+    width: 100%;
+    margin-bottom: var(--spacing-large)
+}
+
+.page__logo-img{
+max-width: 100px;
+height: auto;
+object-fit: cover;
+margin-left: 20px;
+margin-right: 20px;
+}
+.page__title {
+    font-size: var(--font-size-2x-large);
+    text-shadow: 2px 2px var(--color2);
+    color: var(--text-color);
+    text-align: center;
+}
+/* MAIN */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-large);
+}
+/* CARDS */
+.squad {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(200px);
+    gap: var(--spacing-medium);
+    width: 100%;
+    max-width: 1200px;
+}
+
+.squad__card {
+    background-color: var(--text-color);
+    border: 2px solid var(--boarder-color);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.squad__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px #00000026;
+}
+
+.squad__card-image {
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+
+#img-no-background1, #img-no-background3 {
+background: linear-gradient(180deg, var(--img-background-color2), var(--img-background-color-gradient2));
+}
+
+#img-no-background2 {
+    background: linear-gradient(180deg, var(--img-background-color1), var(--img-background-color-gradient1));
+    }
+
+.squad__card-content {
+    padding: var(--spacing-medium);
+    text-align: center;
+    background-color: var(--text-color);
+    border-top: 4px solid var(--boarder-color);
+}
+
+.squad__card-name {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacing-small);
+}
+
+.squad__card-first-name {
+    font-size: var(--font-size-small);
+    color: var(--color2);
+}
+
+.squad__card-last-name {
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color1);
+    text-shadow: 1px 1px var(--color2);
+}
+
+.squad__card-info {
+    font-size: var(--font-size-small);
+    color: var(--color2);
+}
+/* MEDIA QUERYES */
+@media (max-width: 768px) {
+    .page__header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .page__title {
+        font-size: small;
+    }
+}
+
